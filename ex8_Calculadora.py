@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
 
+# Funções
+
 def ler_numeros():
     try:
         n1 = float(entrada1.get().replace(",", "."))
@@ -46,8 +48,12 @@ def limpar():
     saida.config(text="Resultado:")
     ultima.config(text="Última conta:")
 
+# Configuração Padrão
+
 janela = tk.Tk()
 janela.title("Calculadora")
+
+# Texto Padrão
 
 tk.Label(janela, text="Número 1:").grid(row=0, column=0, padx=5, pady=5)
 
@@ -58,6 +64,8 @@ tk.Label(janela, text="Número 2:").grid(row=1, column=0, padx=5, pady=5)
 
 entrada2 = tk.Entry(janela)
 entrada2.grid(row=1, column=1, padx=5, pady=5)
+
+# Botões Interativos
 
 frame_botoes = tk.Frame(janela)
 frame_botoes.grid(row=2, column=0, columnspan=2, pady=10)
